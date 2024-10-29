@@ -20,33 +20,7 @@
 
 ###
 
-<h3 align="left">👩‍💻  demo app using FakeStore as api and Flutter with Riverpod.</h3>
-
-<h3align="left">
-
-lib/
-├── main.dart
-├── presentation/
-│   ├── screens/
-│   │   ├── home_screen.dart
-│   │   └── details_screen.dart
-│   ├── widgets/
-│   │   ├── custom_button.dart
-│   │   └── loading_indicator.dart
-│   └── providers/
-│       ├── provider_one.dart
-│       └── provider_two.dart
-├── models/
-│   ├── user_model.dart
-│   └── product_model.dart
-├── services/
-│   ├── api_service.dart
-│   └── database_service.dart
-└── utils/
-    ├── constants.dart
-    └── helpers.dart
-  
-</h3>
+<h3 align="left">👩‍💻  demo app using FakeStore as api and Flutter with Riverpod.<br><br>lib/<br>├── main.dart<br>├── presentation/<br>│   ├── screens/<br>│   │   ├── home_screen.dart<br>│   │   └── details_screen.dart<br>│   ├── widgets/<br>│   │   ├── custom_button.dart<br>│   │   └── loading_indicator.dart<br>│   └── providers/<br>│       ├── provider_one.dart<br>│       └── provider_two.dart<br>├── models/<br>│   ├── user_model.dart<br>│   └── product_model.dart<br>├── services/<br>│   ├── api_service.dart<br>│   └── database_service.dart<br>└── utils/<br>    ├── constants.dart<br>    └── helpers.dart</h3>
 
 ###
 
