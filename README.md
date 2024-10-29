@@ -22,7 +22,7 @@
 
 <h3 align="left">👩‍💻  demo app using FakeStore as api and Flutter with Riverpod.</h3>
 
-<h3>
+<h3align="left">
 
 lib/
 ├── main.dart
