@@ -22,6 +22,32 @@
 
 <h3 align="left">👩‍💻  demo app using FakeStore as api and Flutter with Riverpod.</h3>
 
+<h3>
+
+lib/
+├── main.dart
+├── presentation/
+│   ├── screens/
+│   │   ├── home_screen.dart
+│   │   └── details_screen.dart
+│   ├── widgets/
+│   │   ├── custom_button.dart
+│   │   └── loading_indicator.dart
+│   └── providers/
+│       ├── provider_one.dart
+│       └── provider_two.dart
+├── models/
+│   ├── user_model.dart
+│   └── product_model.dart
+├── services/
+│   ├── api_service.dart
+│   └── database_service.dart
+└── utils/
+    ├── constants.dart
+    └── helpers.dart
+  
+</h3>
+
 ###
 
 <p align="left">I'm ... from ....<br><br>- 🔭 I’m working as ...<br>- 📚 I'm currently learning ...<br>- ⚡ In my free time I ...</p>
