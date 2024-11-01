@@ -20,7 +20,51 @@
 
 ###
 
-<h3 align="left">👩‍💻  demo app using FakeStore as api and Flutter with Riverpod.<br><br>lib/<br>├── main.dart<br>├── presentation/<br>│   ├── screens/<br>│   │   ├── home_screen.dart<br>│   │   └── details_screen.dart<br>│   ├── widgets/<br>│   │   ├── custom_button.dart<br>│   │   └── loading_indicator.dart<br>│   └── providers/<br>│       ├── provider_one.dart<br>│       └── provider_two.dart<br>├── models/<br>│   ├── user_model.dart<br>│   └── product_model.dart<br>├── services/<br>│   ├── api_service.dart<br>│   └── database_service.dart<br>└── utils/<br>    ├── constants.dart<br>    └── helpers.dart<br><br>Flutter 3.24.4<br>To change the URL to the environment variable, set the value flutter run --dart-define=API_URL=your_api_key_here<br><br>Language management is left to riverpod by user selection</h3>
+<h3 align="left">👩‍💻  demo app using FakeStore as api and Flutter with Riverpod.<br><br>───lib
+│   │   main.dart
+│   │   
+│   ├───models
+│   │   ├───interfaces
+│   │   │       constants.dart
+│   │   │       enviroment.dart
+│   │   │       helpers.dart
+│   │   │       product_detail.dart
+│   │   │       
+│   │   ├───otros
+│   │   │       DatabaseHelper.dart
+│   │   │       user.dart
+│   │   │       
+│   │   └───product
+│   │           product.dart
+│   │           rating.dart
+│   │           
+│   ├───presentation
+│   │   ├───controler
+│   │   │       databaseControler.dart
+│   │   │       idiomaControler.dart
+│   │   │       
+│   │   └───ui
+│   │       ├───presentation
+│   │       │   ├───screens
+│   │       │   │       dashboard.dart
+│   │       │   │       Info_dev.dart
+│   │       │   │       SplashScreen.dart
+│   │       │   │       
+│   │       │   └───widgets
+│   │       │           bank_card.dart
+│   │       │           dialog.dart
+│   │       │           LanguageSwitcher.dart
+│   │       │           Navigator.dart
+│   │       │           
+│   │       └───util
+│   ├───providers
+│   │       languageProvider.dart
+│   │       StateProvider.dart
+│   │       
+│   ├───services
+│   │       GetHTTPS.dart
+│   │       
+│   └───utils<br>    ├── constants.dart<br>    └── helpers.dart<br><br>Flutter 3.24.4<br>To change the URL to the environment variable, set the value flutter run --dart-define=API_URL=your_api_key_here<br><br>Language management is left to riverpod by user selection</h3>
 
 ###
 
