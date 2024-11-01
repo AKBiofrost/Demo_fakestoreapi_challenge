@@ -20,51 +20,7 @@
 
 ###
 
-<h3 align="left">👩‍💻  demo app using FakeStore as api and Flutter with Riverpod.<br><br>───lib
-│   │   main.dart
-│   │   
-│   ├───models
-│   │   ├───interfaces
-│   │   │       constants.dart
-│   │   │       enviroment.dart
-│   │   │       helpers.dart
-│   │   │       product_detail.dart
-│   │   │       
-│   │   ├───otros
-│   │   │       DatabaseHelper.dart
-│   │   │       user.dart
-│   │   │       
-│   │   └───product
-│   │           product.dart
-│   │           rating.dart
-│   │           
-│   ├───presentation
-│   │   ├───controler
-│   │   │       databaseControler.dart
-│   │   │       idiomaControler.dart
-│   │   │       
-│   │   └───ui
-│   │       ├───presentation
-│   │       │   ├───screens
-│   │       │   │       dashboard.dart
-│   │       │   │       Info_dev.dart
-│   │       │   │       SplashScreen.dart
-│   │       │   │       
-│   │       │   └───widgets
-│   │       │           bank_card.dart
-│   │       │           dialog.dart
-│   │       │           LanguageSwitcher.dart
-│   │       │           Navigator.dart
-│   │       │           
-│   │       └───util
-│   ├───providers
-│   │       languageProvider.dart
-│   │       StateProvider.dart
-│   │       
-│   ├───services
-│   │       GetHTTPS.dart
-│   │       
-│   └───utils<br>    ├── constants.dart<br>    └── helpers.dart<br><br>Flutter 3.24.4<br>To change the URL to the environment variable, set the value flutter run --dart-define=API_URL=your_api_key_here<br><br>Language management is left to riverpod by user selection</h3>
+<h3 align="left">👩‍💻  demo app using FakeStore as api and Flutter with Riverpod.<br><br>───lib<br>│   │   main.dart<br>│   │   <br>│   ├───models<br>│   │   ├───interfaces<br>│   │   │       constants.dart<br>│   │   │       enviroment.dart<br>│   │   │       helpers.dart<br>│   │   │       product_detail.dart<br>│   │   │       <br>│   │   ├───otros<br>│   │   │       DatabaseHelper.dart<br>│   │   │       user.dart<br>│   │   │       <br>│   │   └───product<br>│   │           product.dart<br>│   │           rating.dart<br>│   │           <br>│   ├───presentation<br>│   │   ├───controler<br>│   │   │       databaseControler.dart<br>│   │   │       idiomaControler.dart<br>│   │   │       <br>│   │   └───ui<br>│   │       ├───presentation<br>│   │       │   ├───screens<br>│   │       │   │       dashboard.dart<br>│   │       │   │       Info_dev.dart<br>│   │       │   │       SplashScreen.dart<br>│   │       │   │       <br>│   │       │   └───widgets<br>│   │       │           bank_card.dart<br>│   │       │           dialog.dart<br>│   │       │           LanguageSwitcher.dart<br>│   │       │           Navigator.dart<br>│   │       │           <br>│   │       └───util<br>│   ├───providers<br>│   │       languageProvider.dart<br>│   │       StateProvider.dart<br>│   │       <br>│   ├───services<br>│   │       GetHTTPS.dart<br>│   │       <br>│   └───utils<br><br>Flutter 3.24.4<br>To change the URL to the environment variable, set the value flutter run --dart-define=API_URL=your_api_key_here<br><br>Language management is left to riverpod by user selection</h3>
 
 ###
 
@@ -91,4 +47,6 @@
 <h3 align="left">🔥   My Stats :</h3>
 
 ###
+
+
 
