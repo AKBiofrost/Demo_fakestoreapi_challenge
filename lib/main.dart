@@ -1,12 +1,14 @@
 import 'package:demo_fake_store/presentation/ui/presentation/screens/SplashScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
  main() async {
 
   await dotenv.load(fileName: ".env");
-  runApp(MyApp());
+  runApp(ProviderScope(child: MyApp()));
+
+
 }
 
 class MyApp extends StatelessWidget {

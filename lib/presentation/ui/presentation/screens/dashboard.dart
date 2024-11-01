@@ -1,8 +1,15 @@
 import 'package:demo_fake_store/services/GetHTTPS.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../presentation/ui/presentation/widgets/dialog.dart';
 import '../../../../models/product/product.dart';
+import '../../../../providers/languageProvider.dart';
 import '../../../controler/databaseControler.dart';
+import '../../../controler/idiomaControler.dart';
+
+void main() {
+  runApp(ProviderScope(child: dashboard()));
+}
 
 class dashboard extends StatelessWidget {
   const dashboard({super.key});
@@ -15,26 +22,29 @@ class dashboard extends StatelessWidget {
   }
 }
 
-class ProductList extends StatefulWidget {
+class ProductList extends ConsumerStatefulWidget {
   @override
   _ProductListState createState() => _ProductListState();
 }
 
-class _ProductListState extends State<ProductList> {
+class _ProductListState extends ConsumerState<ProductList> {
   late Future<List<Product>> futureProducts;
-  late Future<Product> futureProductsLimit;
 
   @override
   void initState() {
     super.initState();
     futureProducts = ApiService().fetchProducts();
+
   }
 
   @override
   Widget build(BuildContext context) {
+   // final languageProvider = StateProvider<String>((ref) => 'es'); // Default to 'es'
+    final language = ref.watch(languageProvider);
+
     return Scaffold(
       appBar: AppBar(
-        title: Text('Fake Store Products'),
+        title: Text( getLocalizedString('Nombre', language) ),
       ),
       body: FutureBuilder<List<Product>>(
         future: futureProducts,
@@ -58,7 +68,7 @@ class _ProductListState extends State<ProductList> {
                   print('Producto clickeado: ${products[index].title}');
 
                   mostrarBottomSheet(context, products[index].title,
-                      products[index].price.toString(), products[index].image);
+                      products[index].price.toString(), products[index].image, getLocalizedString('Comprar', language));
                   // También puedes navegar a otra pantalla o mostrar un diálogo
                 },
                 leading: Container(

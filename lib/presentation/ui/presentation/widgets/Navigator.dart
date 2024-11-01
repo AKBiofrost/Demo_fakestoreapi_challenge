@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
+import '../screens/Info_dev.dart';
 import '../screens/dashboard.dart';
 
 
@@ -25,7 +26,7 @@ class _MainAppState extends State<Main_navigation> {
   final destinationViews = [
     // const HomePage(),
     const dashboard(),
-   // const Restaurantecercano(),
+    const dashboardInfo(),
     //const SettingsPageHomePage(),
     //const PerfilUsuario(),
 
@@ -70,10 +71,10 @@ class _MainAppState extends State<Main_navigation> {
                 color: Color(0xFFA20000),
               ),
               icon: Icon(
-                IconlyLight.location,
+                Icons.language,
                 color: Color(0xFFA20000),
               ),
-              label: "Info",
+              label: "idioma",
             ),
 
           ],
