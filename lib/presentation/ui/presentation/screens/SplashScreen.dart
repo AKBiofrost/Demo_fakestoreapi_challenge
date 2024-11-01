@@ -16,9 +16,6 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  late bool _rememberMe = false;
-  late bool _SaltarOnBoardin = false;
-  late bool _rememberMeC = false;
 
   @override
   initState() {
@@ -28,7 +25,6 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    Color colorFromHex = const Color(0xA20000);
 
     return Scaffold(
       body: Center(
@@ -61,11 +57,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Future<void> _loadPreferences() async {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
-      _rememberMe = prefs.getBool('login') ?? false;
-      _SaltarOnBoardin = prefs.getBool('Saltar') ?? false;
-/*-------------------------------------------------------------------------------*/
-
-          Future.delayed(Duration(seconds: 3), () {
+      Future.delayed(Duration(seconds: 3), () {
             Navigator.pushAndRemoveUntil(
                 context,
                 MaterialPageRoute(builder: (context) => Main_navigation()),

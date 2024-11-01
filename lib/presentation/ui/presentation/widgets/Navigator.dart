@@ -73,34 +73,9 @@ class _MainAppState extends State<Main_navigation> {
                 IconlyLight.location,
                 color: Color(0xFFA20000),
               ),
-              label: "Cerca de ti",
+              label: "Info",
             ),
-            /*
-            NavigationDestination(
-              selectedIcon: Icon(
-                IconlyBold.heart,
-                color: Color(0xFFA20000),
-              ),
-              icon: Icon(
-                IconlyLight.heart,
-                color: Color(0xFFA20000),
-              ),
-              label: "Favoritos",
-            ),
-            */
-            /*
-            NavigationDestination(
-              selectedIcon: Icon(
-                IconlyBold.user_2,
-                color: Color(0xFFA20000),
-              ),
-              icon: Icon(
-                IconlyLight.user,
-                color: Color(0xFFA20000),
-              ),
-              label: "Perfil",
-            )
-*/
+
           ],
         ),
       ),
